@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { FooLibComponent } from './foo-lib.component';
-import { MatButtonModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatPaginatorModule,
+  MatTableModule
+} from '@angular/material';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
-  declarations: [FooLibComponent],
+  declarations: [FooLibComponent, GridComponent],
   imports: [
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
-  exports: [FooLibComponent]
+  exports: [FooLibComponent, GridComponent]
 })
 export class FooLibModule { }
