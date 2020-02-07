@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "foo-lib": {
-      "root": "projects/foo-lib",
-      "sourceRoot": "projects/foo-lib/src",
+    "foo-lib-sinossi": {
+      "root": "projects/foo-lib-sinossi",
+      "sourceRoot": "projects/foo-lib-sinossi/src",
       "projectType": "library",
       "prefix": "foo",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/foo-lib/tsconfig.lib.json",
-            "project": "projects/foo-lib/ng-package.json"
+            "tsConfig": "projects/foo-lib-sinossi/tsconfig.lib.json",
+            "project": "projects/foo-lib-sinossi/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/foo-lib/src/test.ts",
-            "tsConfig": "projects/foo-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/foo-lib/karma.conf.js"
+            "main": "projects/foo-lib-sinossi/src/test.ts",
+            "tsConfig": "projects/foo-lib-sinossi/tsconfig.spec.json",
+            "karmaConfig": "projects/foo-lib-sinossi/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/foo-lib/tsconfig.lib.json",
-              "projects/foo-lib/tsconfig.spec.json"
+              "projects/foo-lib-sinossi/tsconfig.lib.json",
+              "projects/foo-lib-sinossi/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

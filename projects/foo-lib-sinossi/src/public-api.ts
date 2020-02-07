@@ -1,5 +1,5 @@
 /*
- * Public API Surface of foo-lib
+ * Public API Surface of foo-lib-sinossi
  */
 
 export * from './lib/foo-lib.service';

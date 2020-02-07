@@ -6,14 +6,17 @@ import {
   MatTableModule
 } from '@angular/material';
 import { GridComponent } from './grid/grid.component';
+import { CommonModule } from '@angular/common';
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
-  declarations: [FooLibComponent, GridComponent],
+  declarations: [FooLibComponent, GridComponent, ButtonComponent],
   imports: [
     MatButtonModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    CommonModule
   ],
-  exports: [FooLibComponent, GridComponent]
+  exports: [GridComponent, ButtonComponent]
 })
 export class FooLibModule { }
