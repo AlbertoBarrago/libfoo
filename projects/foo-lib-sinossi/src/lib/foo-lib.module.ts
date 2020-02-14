@@ -8,6 +8,7 @@ import {
 import { GridComponent } from './grid/grid.component';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
+import { ModalsModule } from './modals/modals.module';
 
 @NgModule({
   declarations: [FooLibComponent, GridComponent, ButtonComponent],
@@ -15,7 +16,8 @@ import { ButtonComponent } from './button/button.component';
     MatButtonModule,
     MatTableModule,
     MatPaginatorModule,
-    CommonModule
+    CommonModule,
+    ModalsModule
   ],
   exports: [GridComponent, ButtonComponent]
 })
